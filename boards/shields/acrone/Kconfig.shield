@@ -1,2 +1,5 @@
-config SHIELD_ACRONE
-  def_bool $(shields_list_contains, acrone)
+config SHIELD_ACRONE_LEFT
+  def_bool $(shields_list_contains, acrone_left)
+
+config SHIELD_ACRONE_RIGHT
+  def_bool $(shields_list_contains, acrone_right)

@@ -1,0 +1,14 @@
+file_format: "1"
+id: acorne
+name: acorne
+type: shield
+url: https://github.com/keeb-it/acorne
+requires: [nice_nano_v2]
+exposes: [spi_oled]
+siblings:
+  - acrone_left
+  - acrone_right
+features:
+  - keys
+  - encoder
+  - display

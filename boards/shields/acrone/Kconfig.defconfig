@@ -1,11 +1,25 @@
-if SHIELD_ACRONE
+if SHIELD_ACRONE_LEFT || SHIELD_ACRONE_RIGHT
 
   config ZMK_SPLIT
-  default y
+    default y
 
-  # config ZMK_SPLIT_ROLE_CENTRAL
-  #   default y
+endif
+
+
+if SHIELD_ACRONE_LEFT
+
+  config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
   config ZMK_KEYBOARD_NAME
-    default "acrone"
+    default "acrone.central"
+
+endif
+  
+
+if SHEILD_ACRONE_RIGHT
+
+  config ZMK_KEYBOARD_NAME
+    default "acrone.right"
+
 endif
