@@ -1,0 +1,38 @@
+if SHIELD_0X1235_LEFT || SHIELD_0X1235_RIGHT
+
+  config ZMK_SPLIT
+    default y
+
+endif
+
+
+if SHIELD_0X1235_LEFT
+
+  config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+  config ZMK_KEYBOARD_NAME
+    default "0x1235"
+
+endif
+  
+
+if SHIELD_0X1235_RIGHT
+
+  config ZMK_KEYBOARD_NAME
+    default "0x1235"
+
+endif
+
+if SHIELD_0X1235_LEFT || SHIELD_0X1235_RIGHT
+
+  config ZMK_DISPLAY
+    default y
+  
+  config ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE
+    default y
+    
+  config ZMK_WIDGET_WPM_STATUS
+    default y
+
+endif

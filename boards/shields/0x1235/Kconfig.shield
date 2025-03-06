@@ -1,0 +1,5 @@
+config SHIELD_0X1235_LEFT
+  def_bool $(shields_list_contains, 0x1235_left)
+
+config SHIELD_0X1235_RIGHT
+  def_bool $(shields_list_contains, 0x1235_right)

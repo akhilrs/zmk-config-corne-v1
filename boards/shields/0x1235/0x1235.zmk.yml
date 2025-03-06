@@ -1,0 +1,13 @@
+file_format: "1"
+id: 0x1235
+name: 0x1235
+type: shield
+url: https://github.com/akhilrs/zmk-config-corne-v1
+requires: [nice_nano_v2]
+exposes: [spi_oled]
+siblings:
+  - 0x1235_left
+  - 0x1235_right
+features:
+  - keys
+  - display
